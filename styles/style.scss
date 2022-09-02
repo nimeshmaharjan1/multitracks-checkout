@@ -9,7 +9,6 @@ $font-size-lg: 16px;
 $font-size-sm: 14px;
 $btn-radius: 50px;
 
-
 @mixin btn {
   border-radius: $btn-radius;
 }
@@ -34,8 +33,9 @@ $btn-radius: 50px;
   @include btn();
   font-size: $font-size-sm;
   padding: 8px 34px;
-  border-color: gray;
   color: gray;
+  border-color: #919191;
+  background: transparent;
 }
 
 // CSS RESET

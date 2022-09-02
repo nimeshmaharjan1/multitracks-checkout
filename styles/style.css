@@ -20,8 +20,9 @@
   border-radius: 50px;
   font-size: 14px;
   padding: 8px 34px;
-  border-color: gray;
   color: gray;
+  border-color: #919191;
+  background: transparent;
 }
 
 *,

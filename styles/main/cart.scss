@@ -265,9 +265,7 @@ $gray: #919191;
   }
   .lg-screen-main {
     display: flex;
-    gap: 4rem;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    gap: 3rem;
     h2 {
       font-size: 33px;
       font-weight: 700;
@@ -282,8 +280,10 @@ $gray: #919191;
       color: #828282;
     }
     .left-section {
-      flex: 65%;
+      flex: 80%;
+      margin-top: 50px;
       margin-left: 50px;
+      padding-bottom: 40px;
       .cart-item {
         padding: 0 1rem;
         padding: 40px 0;
@@ -295,6 +295,15 @@ $gray: #919191;
           .bottom {
             @include flex-items-center();
             gap: 1rem;
+          }
+          .bottom {
+            h4 {
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
           .top {
             img {
@@ -321,6 +330,10 @@ $gray: #919191;
         gap: 0.5rem;
         h4 {
           display: inline;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
 
@@ -345,13 +358,129 @@ $gray: #919191;
       }
     }
     .right-section {
-      flex: 35%;
-      margin-right: 75px;
-      .credits {  
+      flex: 20%;
+      padding: 60px 85px !important;
+      background: #fafafa;
+      .credits {
         width: 100%;
         .top {
-          @include flex-items-center();
-          width: 100%;
+          p {
+            font-size: 16px;
+            font-weight: 700;
+            font-size: style.$font-size-lg;
+          }
+          margin-top: 50px;
+          .flex {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+          }
+        }
+      }
+      .promo-code {
+        margin-top: 12px;
+        @include flex-between();
+        padding: 30px 0;
+        @include border-bottom();
+        p {
+          flex-grow: 1;
+          font-weight: 700;
+          font-size: style.$font-size-lg;
+          line-height: 2.1em;
+        }
+        img {
+          height: 16px;
+          width: 16px;
+          display: inline;
+        }
+      }
+      .sub-total {
+        @include border-bottom();
+        padding: 30px 0;
+        .top,
+        .bottom {
+          @include flex-between();
+          p {
+            flex-grow: 1;
+            font-weight: 700;
+            font-size: style.$font-size-lg;
+            line-height: 1.9em;
+          }
+          span {
+            font-weight: 700;
+            font-size: style.$font-size-lg;
+            color: $gray;
+          }
+        }
+      }
+      .total {
+        @include flex-between();
+        padding: 30px 0;
+        @include border-bottom();
+        p {
+          flex-grow: 1;
+          font-weight: 700;
+          font-size: style.$font-size-lg;
+          line-height: 1.9em;
+        }
+        span {
+          font-weight: 700;
+          font-size: style.$font-size-lg;
+        }
+      }
+      .payment {
+        padding: 30px 0;
+        @include border-bottom();
+        p {
+          flex-grow: 1;
+          font-weight: 700;
+          font-size: style.$font-size-lg;
+          line-height: 1.9em;
+        }
+        .method {
+          @include flex-between();
+          .name {
+            p {
+              display: inline;
+            }
+            span {
+              color: $gray;
+            }
+          }
+          .change {
+            a {
+              color: style.$primary-color !important;
+              font-size: style.$font-size-lg;
+            }
+          }
+        }
+      }
+      .note {
+        padding: 30px 0;
+        color: $gray;
+      }
+
+      .place-order,
+      .terms p {
+        width: 100%;
+        text-align: center;
+      }
+      .place-order {
+        button {
+          width: 412px;
+        }
+      }
+      .terms {
+        margin-top: 1.6rem;
+        p {
+          padding: 0 2rem;
+          margin: 0;
+          font-size: style.$font-size-lg;
+          color: $gray;
+          span {
+            text-decoration: underline;
+            cursor: pointer;
+          }
         }
       }
     }
