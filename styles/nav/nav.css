@@ -1,23 +1,136 @@
-nav {
+nav .sm-screen {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 74px;
+  height: 78px;
   border-bottom: 1px solid #dadada;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
-nav .menu-icon,
-nav .brand,
-nav .users {
+nav .sm-screen .menu-icon,
+nav .sm-screen .brand,
+nav .sm-screen .users {
   cursor: pointer;
 }
-nav .menu-icon {
+nav .sm-screen .brand img {
+  margin-left: 1.7rem;
+}
+nav .sm-screen .menu-icon {
   height: 25px;
   width: 25px;
 }
-nav .users {
+nav .sm-screen .users {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+nav .sm-screen .menu {
+  position: relative;
+}
+nav .sm-screen .menu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  color: #919191;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+nav .sm-screen .menu .dropdown-content p {
+  cursor: pointer;
+  line-height: 2em;
+  font-size: 16px;
+  transition: 0.2s;
+}
+nav .sm-screen .menu .dropdown-content p:hover {
+  color: black;
+}
+nav .sm-screen .menu:hover .dropdown-content {
+  display: block;
+}
+nav .lg-screen {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  nav .sm-screen {
+    display: none;
+  }
+  nav .lg-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+    border-bottom: 1px solid #dadada;
+    padding: 1rem 0.5rem;
+  }
+  nav .lg-screen p {
+    color: #919191;
+    font-size: 16px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+  }
+  nav .lg-screen p img {
+    margin-top: 3.5px;
+    width: 16px;
+    height: 16px;
+  }
+  nav .lg-screen .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  nav .lg-screen .left .nav-brand {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  nav .lg-screen .left h1 {
+    font-weight: 300;
+  }
+  nav .lg-screen .left h1 .brand-title {
+    font-weight: 900;
+  }
+  nav .lg-screen .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  nav .lg-screen .right .search {
+    position: relative;
+    color: #919191;
+    font-size: 16px;
+  }
+  nav .lg-screen .right .search {
+    display: inline-block;
+  }
+  nav .lg-screen .right .search input {
+    width: 175px;
+    height: 38px;
+    color: #919191;
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  }
+  nav .lg-screen .right .search input {
+    text-indent: 10px;
+  }
+  nav .lg-screen .right .search .fa-search {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  nav .lg-screen .right .search .fa-search {
+    left: auto;
+    right: 10px;
+  }
+  nav .lg-screen .right p {
+    gap: 0.3rem;
+  }
 }/*# sourceMappingURL=nav.css.map */

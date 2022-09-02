@@ -17,209 +17,307 @@
   </head>
   <body>
     <nav>
-      <div class="menu">
-        <img src="./assets/mobile/menu.png" alt="menu" class="menu-icon" />
+      <div class="sm-screen">
+        <div class="menu">
+          <img src="./assets/mobile/menu.png" alt="menu" class="menu-icon" />
+          <div class="dropdown-content">
+            <p>Products</p>
+            <p>Songs</p>
+            <p>Sounds</p>
+            <p>Pricing</p>
+          </div>
+        </div>
+        <div class="brand">
+          <img src="./assets/mobile/MT.png" alt="brand" />
+        </div>
+        <div class="users">
+          <img src="./assets/mobile/magnifying-glass.png" alt="search" />
+          <img src="./assets/mobile/user.png" alt="search" />
+        </div>
       </div>
-      <div class="brand">
-        <img src="./assets/mobile/MT.png" alt="brand" />
-      </div>
-      <div class="users">
-        <img src="./assets/mobile/magnifying-glass.png" alt="search" />
-        <img src="./assets/mobile/user.png" alt="search" />
+      <div class="lg-screen">
+        <div class="left">
+          <div class="nav-brand">
+            <img src="./assets/mobile/MT.png" alt="brand" />
+            <h1><span class="brand-title">MultiTracks</span>.com</h1>
+          </div>
+          <p>Products <img src="./assets/mobile/down.png" alt="" /></p>
+          <p>Songs <img src="./assets/mobile/down.png" alt="" /></p>
+          <p>Sounds <img src="./assets/mobile/down.png" alt="" /></p>
+          <p>Pricing</p>
+          <p>More</p>
+          <p style="color: #43b1e6">COVID-19</p>
+        </div>
+        <div class="right">
+          <p><img src="./assets/mobile/user.png" alt="user" /> Account</p>
+          <p>
+            <img src="./assets/mobile/socials/shopping-cart.png" alt="cart" />
+            Cart
+          </p>
+          <p><img src="./assets/headphones.png" alt="support" /> Support</p>
+          <div class="search">
+            <img
+              src="./assets/mobile/magnifying-glass.png"
+              alt="search"
+              class="fa-search"
+            />
+            <input placeholder="Search" />
+          </div>
+        </div>
       </div>
     </nav>
 
-    <main class="cart-section">
-      <h1>My Cart</h1>
+    <div class="sm-screen-main">
+      <main class="cart-section">
+        <h1>My Cart</h1>
 
-      <div class="cart-item">
-        <div class="top">
-          <img src="./assets/mobile/music1.png" alt="music" />
-          <div class="details">
-            <h3>Graves into Gardens</h3>
-            <h4>Elevation Worship</h4>
-          </div>
-          <div class="remove">
-            <img src="./assets/mobile/x.png" alt="remove" />
-          </div>
-        </div>
-
-        <div class="middle">
-          <div class="category">
-            <img src="./assets/mobile/MultiTracks.png" alt="brand" />
-            <h4>MultiTrack WAV</h4>
-          </div>
-          <div class="credits">
-            <h3>39 Credits</h3>
-          </div>
-        </div>
-
-        <div class="bottom">
-          <button class="secondary-btn">Save For Later</button>
-        </div>
-      </div>
-
-      <div class="cart-item" style="padding-bottom: 1rem; border: none">
-        <div class="top">
-          <img src="./assets/mobile/music2.png" alt="music" />
-          <div class="details">
-            <h3>Goodness of God</h3>
-            <h4>Bethel Music</h4>
-          </div>
-          <div class="remove">
-            <img src="./assets/mobile/x.png" alt="remove" />
-          </div>
-        </div>
-
-        <div class="middle">
-          <div class="category">
-            <img src="./assets/mobile/chart.png" alt="brand" />
-            <h4>Chart</h4>
-          </div>
-          <div class="credits">
-            <h3>2 Credits</h3>
-          </div>
-        </div>
-
-        <div class="bottom">
-          <button class="secondary-btn">Save For Later</button>
-        </div>
-      </div>
-      <a href="#"
-        ><img src="./assets/mobile/left-chevron.png" alt="" /> Continue
-        shopping</a
-      >
-    </main>
-
-    <section class="order-summary-section">
-      <h1>Order Summary</h1>
-      <div class="order-body">
-        <div class="credit-details">
+        <div class="cart-item">
           <div class="top">
-            <p>Credits in your account</p>
-            <span>234</span>
-          </div>
-          <div class="bottom">
-            <p>Credits required</p>
-            <span>41</span>
-          </div>
-        </div>
-
-        <div class="promo-code">
-          <p>Promo Code</p>
-          <img src="./assets/mobile/down.png" alt="down arrow" />
-        </div>
-
-        <div class="sub-total">
-          <div class="top">
-            <p>Subtotal</p>
-            <span>41</span>
-          </div>
-          <div class="bottom">
-            <p>Tax</p>
-            <span>-</span>
-          </div>
-        </div>
-
-        <div class="total">
-          <p>TOTAL</p>
-          <span>41</span>
-        </div>
-
-        <div class="payment">
-          <p>Payment Method</p>
-          <div class="method">
-            <div class="name">
-              <p>American Express</p>
-              <span> - 1234</span>
+            <img src="./assets/mobile/music1.png" alt="music" />
+            <div class="details">
+              <h3>Graves into Gardens</h3>
+              <h4>Elevation Worship</h4>
             </div>
-            <div class="change">
-              <a href="#">Change</a>
+            <div class="remove">
+              <img src="./assets/mobile/x.png" alt="remove" />
             </div>
           </div>
-        </div>
-      </div>
 
-      <p class="note">All sales are final.</p>
-      <div class="place-order">
-        <button class="primary-btn" id="placeOrder">place order</button>
-      </div>
-      <div class="terms">
-        <p>By finalizing your order, you agree to the</p>
-        <p><span>Terms of Use</span> and <span>Privacy Policy.</span></p>
-      </div>
-    </section>
-
-    <section class="saved-for-later-section">
-      <h1 id="savedForLater">Saved For Later</h1>
-
-      <div class="cart-item">
-        <div class="top">
-          <img src="./assets/mobile/music3.png" alt="music" />
-          <div class="details">
-            <h3>Forever (Live Version)</h3>
-            <h4>Kari Jobe</h4>
+          <div class="middle">
+            <div class="category">
+              <img src="./assets/mobile/MultiTracks.png" alt="brand" />
+              <h4>MultiTrack WAV</h4>
+            </div>
+            <div class="credits">
+              <h3>39 Credits</h3>
+            </div>
           </div>
-          <div class="remove">
-            <img src="./assets/mobile/x.png" alt="remove" />
+
+          <div class="bottom">
+            <button class="secondary-btn">Save For Later</button>
           </div>
         </div>
 
-        <div class="middle">
-          <div class="category">
-            <img src="./assets/mobile/MultiTracks.png" alt="brand" />
-            <h4>MultiTrack WAV</h4>
+        <div class="cart-item" style="padding-bottom: 1rem; border: none">
+          <div class="top">
+            <img src="./assets/mobile/music2.png" alt="music" />
+            <div class="details">
+              <h3>Goodness of God</h3>
+              <h4>Bethel Music</h4>
+            </div>
+            <div class="remove">
+              <img src="./assets/mobile/x.png" alt="remove" />
+            </div>
           </div>
-          <div class="credits">
-            <button class="secondary-btn">Add To Cart</button>
+
+          <div class="middle">
+            <div class="category">
+              <img src="./assets/mobile/chart.png" alt="brand" />
+              <h4>Chart</h4>
+            </div>
+            <div class="credits">
+              <h3>2 Credits</h3>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <button class="secondary-btn">Save For Later</button>
           </div>
         </div>
-      </div>
-      <div class="cart-item">
-        <div class="top">
-          <img src="./assets/mobile/music4.png" alt="music" />
-          <div class="details">
-            <h3>In God We Trust</h3>
-            <h4>Hillsong Worship</h4>
+        <a href="#"
+          ><img src="./assets/mobile/left-chevron.png" alt="" /> Continue
+          shopping</a
+        >
+      </main>
+
+      <section class="order-summary-section">
+        <h1>Order Summary</h1>
+        <div class="order-body">
+          <div class="credit-details">
+            <div class="top">
+              <p>Credits in your account</p>
+              <span>234</span>
+            </div>
+            <div class="bottom">
+              <p>Credits required</p>
+              <span>41</span>
+            </div>
           </div>
-          <div class="remove">
-            <img src="./assets/mobile/x.png" alt="remove" />
+
+          <div class="promo-code">
+            <p>Promo Code</p>
+            <img src="./assets/mobile/down.png" alt="down arrow" />
+          </div>
+
+          <div class="sub-total">
+            <div class="top">
+              <p>Subtotal</p>
+              <span>41</span>
+            </div>
+            <div class="bottom">
+              <p>Tax</p>
+              <span>-</span>
+            </div>
+          </div>
+
+          <div class="total">
+            <p>TOTAL</p>
+            <span>41</span>
+          </div>
+
+          <div class="payment">
+            <p>Payment Method</p>
+            <div class="method">
+              <div class="name">
+                <p>American Express</p>
+                <span> - 1234</span>
+              </div>
+              <div class="change">
+                <a href="#">Change</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="middle">
-          <div class="category">
-            <img src="./assets/mobile/MultiTracks.png" alt="brand" />
-            <h4>MultiTrack WAV</h4>
+        <p class="note">All sales are final.</p>
+        <div class="place-order">
+          <button class="primary-btn" id="placeOrder">place order</button>
+        </div>
+        <div class="terms">
+          <p>By finalizing your order, you agree to the</p>
+          <p><span>Terms of Use</span> and <span>Privacy Policy.</span></p>
+        </div>
+      </section>
+
+      <section class="saved-for-later-section">
+        <h1 id="savedForLater">Saved For Later</h1>
+
+        <div class="cart-item">
+          <div class="top">
+            <img src="./assets/mobile/music3.png" alt="music" />
+            <div class="details">
+              <h3>Forever (Live Version)</h3>
+              <h4>Kari Jobe</h4>
+            </div>
+            <div class="remove">
+              <img src="./assets/mobile/x.png" alt="remove" />
+            </div>
           </div>
-          <div class="credits">
-            <button class="secondary-btn">Add To Cart</button>
+
+          <div class="middle">
+            <div class="category">
+              <img src="./assets/mobile/MultiTracks.png" alt="brand" />
+              <h4>MultiTrack WAV</h4>
+            </div>
+            <div class="credits">
+              <button class="secondary-btn">Add To Cart</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="cart-item" style="border-bottom: none">
-        <div class="top">
-          <img src="./assets/mobile/music5.png" alt="music" />
-          <div class="details">
-            <h3>This Is Amazing Grace</h3>
-            <h4>Phil Wickham</h4>
+        <div class="cart-item">
+          <div class="top">
+            <img src="./assets/mobile/music4.png" alt="music" />
+            <div class="details">
+              <h3>In God We Trust</h3>
+              <h4>Hillsong Worship</h4>
+            </div>
+            <div class="remove">
+              <img src="./assets/mobile/x.png" alt="remove" />
+            </div>
           </div>
-          <div class="remove">
-            <img src="./assets/mobile/x.png" alt="remove" />
+
+          <div class="middle">
+            <div class="category">
+              <img src="./assets/mobile/MultiTracks.png" alt="brand" />
+              <h4>MultiTrack WAV</h4>
+            </div>
+            <div class="credits">
+              <button class="secondary-btn">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item" style="border-bottom: none">
+          <div class="top">
+            <img src="./assets/mobile/music5.png" alt="music" />
+            <div class="details">
+              <h3>This Is Amazing Grace</h3>
+              <h4>Phil Wickham</h4>
+            </div>
+            <div class="remove">
+              <img src="./assets/mobile/x.png" alt="remove" />
+            </div>
+          </div>
+
+          <div class="middle">
+            <div class="category">
+              <img src="./assets/mobile/MultiTracks.png" alt="brand" />
+              <h4>MultiTrack WAV</h4>
+            </div>
+            <div class="credits">
+              <button class="secondary-btn">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="lg-screen-main">
+      <div class="left-section">
+        <h2>My Cart</h2>
+        <div class="cart-item">
+          <div class="flex">
+            <div class="top">
+              <img src="./assets/mobile/music1.png" alt="music one" />
+              <div class="details">
+                <h3>Graves into Gardens</h3>
+                <h4>Elevation Worship</h4>
+              </div>
+            </div>
+            <div class="middle">
+              <img src="./assets/mobile/MultiTracks.png" alt="" />
+              <h4>MultiTrack WAV</h4>
+            </div>
+            <div class="bottom">
+              <h3>39 Credits</h3>
+            </div>
+          </div>
+          <div class="actions">
+            <h4>Remove</h4>
+            <h4>|</h4>
+            <h4>Save For Later</h4>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="flex">
+            <div class="top">
+              <img src="./assets/mobile/music2.png" alt="music one" />
+              <div class="details">
+                <h3>Graves into Gardens</h3>
+                <h4>Elevation Worship</h4>
+              </div>
+            </div>
+            <div class="middle">
+              <img src="./assets/mobile/chart.png" alt="" />
+              <h4>Chart</h4>
+            </div>
+            <div class="bottom">
+              <h3>2 Credits</h3>
+            </div>
+          </div>
+          <div class="actions">
+            <h4>Remove</h4>
+            <h4>|</h4>
+            <h4>Save For Later</h4>
           </div>
         </div>
 
-        <div class="middle">
-          <div class="category">
-            <img src="./assets/mobile/MultiTracks.png" alt="brand" />
-            <h4>MultiTrack WAV</h4>
-          </div>
-          <div class="credits">
-            <button class="secondary-btn">Add To Cart</button>
-          </div>
-        </div>
+        <a href="#"
+          ><img src="./assets/mobile/left-chevron.png" alt="" /> Continue
+          shopping</a
+        >
       </div>
-    </section>
+      <div class="right-section"><h2>Order Summary</h2></div>
+    </div>
 
     <footer>
       <div class="subscribe">
