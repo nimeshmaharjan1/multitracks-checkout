@@ -1,0 +1,251 @@
+@use "../style.scss" as style;
+$gray: #919191;
+
+@mixin heading-4 {
+  font-weight: 400;
+  font-size: style.$font-size-sm;
+  color: gray;
+}
+
+@mixin border-bottom {
+  border-bottom: 1px solid #dadada;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin cartItem {
+  padding: 0 8px;
+  padding-bottom: 2rem;
+  margin-top: 26px;
+  @include border-bottom();
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      height: 48px;
+      width: 48px;
+    }
+    .details {
+      margin-left: 1rem;
+      flex-grow: 1;
+      h3 {
+        font-weight: 700;
+        font-size: style.$font-size-sm;
+      }
+
+      h4 {
+        @include heading-4();
+      }
+    }
+    .remove {
+      img {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+  .middle {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    .category {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      img {
+        height: 20px;
+        width: 20px;
+      }
+      h4 {
+        @include heading-4();
+        font-weight: 700;
+      }
+    }
+    .credits {
+      h3 {
+        font-weight: 700;
+        font-size: style.$font-size-lg;
+      }
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.cart-section {
+  padding: 0 1rem;
+  margin: 16px 0;
+  h1 {
+    font-size: style.$heading-font-size;
+  }
+  .cart-item {
+    @include cartItem();
+  }
+  a {
+    text-decoration: none;
+    color: #43b1e6;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 1rem;
+    img {
+      display: inline;
+    }
+  }
+}
+
+.order-summary-section {
+  margin-top: 60px;
+  padding: 0 1rem;
+  h1 {
+    font-size: style.$heading-font-size;
+  }
+  .order-body {
+    margin-top: 20px;
+    padding: 0 8px;
+    .credit-details {
+      .top,
+      .bottom {
+        @include flex-between();
+        p {
+          flex-grow: 1;
+          font-weight: 700;
+          font-size: style.$font-size-lg;
+          line-height: 1.9em;
+        }
+        span {
+          font-weight: 700;
+          font-size: style.$font-size-lg;
+          color: $gray;
+        }
+      }
+    }
+
+    .promo-code {
+      margin-top: 12px;
+      @include flex-between();
+      p {
+        flex-grow: 1;
+        font-weight: 700;
+        font-size: style.$font-size-lg;
+        line-height: 2.1em;
+      }
+      img {
+        height: 16px;
+        width: 16px;
+        display: inline;
+      }
+    }
+
+    .sub-total {
+      margin-top: 20px;
+      @include border-bottom();
+      padding-bottom: 1rem;
+      .top,
+      .bottom {
+        @include flex-between();
+        p {
+          flex-grow: 1;
+          font-weight: 700;
+          font-size: style.$font-size-lg;
+          line-height: 1.9em;
+        }
+        span {
+          font-weight: 700;
+          font-size: style.$font-size-lg;
+          color: $gray;
+        }
+      }
+    }
+
+    .total {
+      @include flex-between();
+      padding: 12px 0;
+      @include border-bottom();
+      p {
+        flex-grow: 1;
+        font-weight: 700;
+        font-size: style.$font-size-lg;
+        line-height: 1.9em;
+      }
+      span {
+        font-weight: 700;
+        font-size: style.$font-size-lg;
+      }
+    }
+
+    .payment {
+      margin-top: 16px;
+      @include border-bottom();
+      padding-bottom: 16px;
+      p {
+        flex-grow: 1;
+        font-weight: 700;
+        font-size: style.$font-size-lg;
+        line-height: 1.9em;
+      }
+      .method {
+        @include flex-between();
+        .name {
+          p {
+            display: inline;
+          }
+          span {
+            color: $gray;
+          }
+        }
+        .change {
+          a {
+            color: style.$primary-color !important;
+            font-size: style.$font-size-lg;
+          }
+        }
+      }
+    }
+  }
+
+  .note {
+    margin-top: 1.2rem;
+    color: $gray;
+  }
+
+  .place-order,
+  .terms p {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .terms {
+    margin-top: 1.4rem;
+    p {
+      padding: 0 2rem;
+      margin: 0;
+      font-size: style.$font-size-sm;
+      color: $gray;
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.saved-for-later-section {
+  margin-top: 60px;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+  h1 {
+    font-size: 23px;
+    font-weight: 700;
+  }
+  .cart-item {
+    @include cartItem();
+  }
+}

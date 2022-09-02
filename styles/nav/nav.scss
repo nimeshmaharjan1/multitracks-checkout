@@ -1,0 +1,19 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  @include flex-center();
+  height: 74px;
+  border-bottom: 1px solid #dadada;
+  padding: 1rem;
+  .menu-icon {
+    height: 25px;
+    width: 25px;
+  }
+  .users {
+    @include flex-center();
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+$bg: #fafafa;
+$primary-color: #43b1e6;
+$light-color: gray;
+$heading-font-size: 33px;
+$footer-header-font-size: 20px;
+$font-size-lg: 16px;
+$font-size-sm: 14px;
+$btn-radius: 50px;
+
+@mixin btn {
+  border-radius: $btn-radius;
+}
+
+.primary-btn {
+  @include btn();
+  text-transform: uppercase;
+  font-size: $font-size-lg;
+  background: $primary-color;
+  font-weight: 700;
+  border: none;
+  color: white;
+  padding: 12px 80px;
+  width: 312px;
+}
+.secondary-btn {
+  @include btn();
+  font-size: $font-size-sm;
+  padding: 8px 34px;
+  border-color: gray;
+  color: gray;
+}
+
+// CSS RESET
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
