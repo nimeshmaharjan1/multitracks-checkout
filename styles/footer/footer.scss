@@ -86,8 +86,11 @@ footer {
     flex: 50%;
   }
 
-  .company {
-    margin-top: 2rem;
+  .resources-company {
+    flex: 50%;
+    .company {
+      margin-top: 2rem;
+    }
   }
   .store-extras,
   .extras,
@@ -95,6 +98,9 @@ footer {
     margin-top: 2rem;
   }
   .store-extras {
+    flex: 50%;
+  }
+  .account {
     flex: 50%;
   }
 

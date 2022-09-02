@@ -75,7 +75,10 @@ footer .have-a-problem .flex-center {
 footer .products {
   flex: 50%;
 }
-footer .company {
+footer .resources-company {
+  flex: 50%;
+}
+footer .resources-company .company {
   margin-top: 2rem;
 }
 footer .store-extras,
@@ -84,6 +87,9 @@ footer .account {
   margin-top: 2rem;
 }
 footer .store-extras {
+  flex: 50%;
+}
+footer .account {
   flex: 50%;
 }
 footer .socials {

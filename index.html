@@ -142,7 +142,7 @@
 
       <p class="note">All sales are final.</p>
       <div class="place-order">
-        <button class="primary-btn">place order</button>
+        <button class="primary-btn" id="placeOrder">place order</button>
       </div>
       <div class="terms">
         <p>By finalizing your order, you agree to the</p>
@@ -151,14 +151,14 @@
     </section>
 
     <section class="saved-for-later-section">
-      <h1>Saved For Later</h1>
+      <h1 id="savedForLater">Saved For Later</h1>
 
       <div class="cart-item">
         <div class="top">
-          <img src="./assets/mobile/music1.png" alt="music" />
+          <img src="./assets/mobile/music3.png" alt="music" />
           <div class="details">
-            <h3>Graves into Gardens</h3>
-            <h4>Elevation Worship</h4>
+            <h3>Forever (Live Version)</h3>
+            <h4>Kari Jobe</h4>
           </div>
           <div class="remove">
             <img src="./assets/mobile/x.png" alt="remove" />
@@ -171,20 +171,16 @@
             <h4>MultiTrack WAV</h4>
           </div>
           <div class="credits">
-            <h3>39 Credits</h3>
+            <button class="secondary-btn">Add To Cart</button>
           </div>
-        </div>
-
-        <div class="bottom">
-          <button class="secondary-btn">Save For Later</button>
         </div>
       </div>
       <div class="cart-item">
         <div class="top">
-          <img src="./assets/mobile/music1.png" alt="music" />
+          <img src="./assets/mobile/music4.png" alt="music" />
           <div class="details">
-            <h3>Graves into Gardens</h3>
-            <h4>Elevation Worship</h4>
+            <h3>In God We Trust</h3>
+            <h4>Hillsong Worship</h4>
           </div>
           <div class="remove">
             <img src="./assets/mobile/x.png" alt="remove" />
@@ -197,20 +193,16 @@
             <h4>MultiTrack WAV</h4>
           </div>
           <div class="credits">
-            <h3>39 Credits</h3>
+            <button class="secondary-btn">Add To Cart</button>
           </div>
-        </div>
-
-        <div class="bottom">
-          <button class="secondary-btn">Save For Later</button>
         </div>
       </div>
-      <div class="cart-item" style="padding-bottom: 1rem; border: none">
+      <div class="cart-item" style="border-bottom: none">
         <div class="top">
-          <img src="./assets/mobile/music1.png" alt="music" />
+          <img src="./assets/mobile/music5.png" alt="music" />
           <div class="details">
-            <h3>Graves into Gardens</h3>
-            <h4>Elevation Worship</h4>
+            <h3>This Is Amazing Grace</h3>
+            <h4>Phil Wickham</h4>
           </div>
           <div class="remove">
             <img src="./assets/mobile/x.png" alt="remove" />
@@ -223,12 +215,8 @@
             <h4>MultiTrack WAV</h4>
           </div>
           <div class="credits">
-            <h3>39 Credits</h3>
+            <button class="secondary-btn">Add To Cart</button>
           </div>
-        </div>
-
-        <div class="bottom">
-          <button class="secondary-btn">Save For Later</button>
         </div>
       </div>
     </section>
@@ -347,6 +335,13 @@
         <span>©2006-2021 MultiTracks.com LLC.</span>
         <span> All Rights Reserved</span>
       </div>
+    </div>
+    <div id="sticky-total">
+      <div class="total">
+        <p>TOTAL</p>
+        <p>41 Credits</p>
+      </div>
+      <div class="sticky-btn">place order</div>
     </div>
   </body>
 </html>

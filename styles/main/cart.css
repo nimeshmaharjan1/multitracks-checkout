@@ -2,6 +2,7 @@
 .primary-btn {
   border-radius: 50px;
   text-transform: uppercase;
+  cursor: pointer;
   font-size: 16px;
   background: #43b1e6;
   font-weight: 700;
@@ -15,6 +16,7 @@
 }
 
 .secondary-btn {
+  cursor: pointer;
   border-radius: 50px;
   font-size: 14px;
   padding: 8px 34px;
@@ -305,6 +307,7 @@ h6 {
   padding-bottom: 2rem;
   margin-top: 26px;
   border-bottom: 1px solid #dadada;
+  padding-bottom: 1rem;
 }
 .saved-for-later-section .cart-item .top {
   display: flex;

@@ -248,5 +248,6 @@ $gray: #919191;
   }
   .cart-item {
     @include cartItem();
+    padding-bottom: 1rem;
   }
 }
