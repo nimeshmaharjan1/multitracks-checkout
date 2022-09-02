@@ -6,6 +6,11 @@ nav {
   border-bottom: 1px solid #dadada;
   padding: 1rem;
 }
+nav .menu-icon,
+nav .brand,
+nav .users {
+  cursor: pointer;
+}
 nav .menu-icon {
   height: 25px;
   width: 25px;

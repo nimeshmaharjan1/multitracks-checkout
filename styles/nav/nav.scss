@@ -8,9 +8,16 @@ nav {
   height: 74px;
   border-bottom: 1px solid #dadada;
   padding: 1rem;
+  .menu-icon,
+  .brand,
+  .users {
+    cursor: pointer;
+  }
   .menu-icon {
     height: 25px;
     width: 25px;
+  }
+  .brand {
   }
   .users {
     @include flex-center();
