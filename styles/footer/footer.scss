@@ -350,11 +350,22 @@ footer {
     flex-direction: row-reverse;
     width: 100% !important;
     justify-content: space-between;
-    padding: 2px 135px;
     align-items: center;
     .terms,
     .language {
       padding-top: 0;
+    }
+    .language {
+      flex-grow: 1;
+    }
+    .terms {
+      flex-grow: 3;
+      margin-left: -9rem;
+    }
+    .copyright {
+      text-align: left;
+      flex-basis: 500px;
+      margin-left: -1rem;
     }
   }
 }

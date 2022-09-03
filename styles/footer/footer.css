@@ -336,11 +336,22 @@ footer .lg-screen .right .socials .buttons .button-twt p {
     flex-direction: row-reverse;
     width: 100% !important;
     justify-content: space-between;
-    padding: 2px 135px;
     align-items: center;
   }
   .miscellaneous .terms,
 .miscellaneous .language {
     padding-top: 0;
+  }
+  .miscellaneous .language {
+    flex-grow: 1;
+  }
+  .miscellaneous .terms {
+    flex-grow: 3;
+    margin-left: -9rem;
+  }
+  .miscellaneous .copyright {
+    text-align: left;
+    flex-basis: 500px;
+    margin-left: -1rem;
   }
 }/*# sourceMappingURL=footer.css.map */
